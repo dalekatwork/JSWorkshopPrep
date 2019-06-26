@@ -1,0 +1,11 @@
+body {
+    background-color:wheat;
+}
+input{
+    outline: none;
+}
+img{
+    height:50px; 
+    width:50px; 
+    position: absolute;
+}

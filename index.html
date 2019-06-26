@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript">
+      var myVar;
+      function dance(){ 
+        var div = document.getElementById("cat"); 
+        myVar = setInterval(function () { 
+            div.style.top = Math.random()* 200 + "px"; 
+            div.style.left = Math.random()* 200 + "px"; 
+        }, 500); 
+      }
+      function stop(){
+        clearTimeout(myVar);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="&#9873;" onclick="dance()" style="color: green;">
+    <input type="button" value="&#9747;" onclick="stop()" style="color: red;">
+    <img id="cat" src="cat.png" alt="Cat">
+  </body>
+</html>
